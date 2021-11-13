@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="mobiles" value="Samsung Mobiles"/>
+    <groups>
+      <run>
+        <include name="Launch"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.org.acn.Amazon">
+        <methods>
+          <include name="mobileSelect"/>
+          <include name="Launch"/>
+          <include name="mobileSearch"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="closeBrowser"/>
+          <include name="dropDown"/>
+        </methods>
+      </class> <!-- com.org.acn.Amazon -->
+      <class name="com.org.acn.Flipkart">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="dropDown"/>
+          <include name="afterMethod"/>
+          <include name="Launch"/>
+        </methods>
+      </class> <!-- com.org.acn.Flipkart -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
